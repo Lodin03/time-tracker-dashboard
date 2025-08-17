@@ -1,5 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(226, 43%, 10%);
+  color: hsl(0, 100%, 100%);
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+.container-box__profile {
+  grid-row: span 2;
+  grid-column: 1;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.container-box__profile-top {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+  padding: 2.2rem;
+  z-index: 2;
+  flex: 1;
+}
+.container-box__profile-top__text {
+  color: hsl(236, 100%, 87%);
+}
+.container-box__profile-top__name {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.container-box__profile-top__img {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+.container-box__profile-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.1rem;
+  padding-bottom: 3.5rem;
+  margin-top: -1rem;
+  gap: 1rem;
+}
+.container-box__profile-bottom__time-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1rem;
+}
+.container-box__profile-bottom__active {
+  color: hsl(0, 100%, 100%) !important;
+}
+.container-box__profile-bottom button {
+  font-size: 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+.container-box__work {
+  grid-column: 2;
+  grid-row: 1;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box__work-header {
+  display: flex;
+  justify-content: space-between;
+}
+.container-box__play {
+  grid-column: 3;
+  grid-row: 1;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box__study {
+  grid-column: 4;
+  grid-row: 1;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box__exercise {
+  grid-column: 2;
+  grid-row: 2;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box__social {
+  grid-column: 3;
+  grid-row: 2;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box__self-care {
+  grid-column: 4;
+  grid-row: 2;
+  border: 1px solid white;
+  padding: 1rem;
+}
+.container-box .card {
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.container-box .card:hover {
+  transform: translateY(-5px);
+}
+.container-box .card .card-top {
+  height: 3rem;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+.container-box .card .card-top .card-icon {
+  height: 4.5rem;
+  width: auto;
+  opacity: 0.8;
+}
+.container-box .card .card-bottom {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1.5rem;
+  margin-top: -1rem;
+  position: relative;
+  z-index: 1;
+}
+.container-box .card .card-bottom .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.container-box .card .card-bottom .card-header .title {
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  margin: 0;
+}
+.container-box .card .card-bottom .card-header .menu-btn {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.container-box .card .card-bottom .card-header .menu-btn:hover {
+  opacity: 1;
+}
+.container-box .card .card-bottom .time .current-hours {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: hsl(0, 100%, 100%);
+  margin: 0 0 0.5rem 0;
+}
+.container-box .card .card-bottom .time .previous-hours {
+  color: hsl(235, 45%, 61%);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.container-box .card.work-card .card-top {
+  background-color: hsl(15, 100%, 70%);
+}
+.container-box .card.play-card .card-top {
+  background-color: hsl(195, 74%, 62%);
+}
+.container-box .card.study-card .card-top {
+  background-color: hsl(348, 100%, 68%);
+}
+.container-box .card.exercise-card .card-top {
+  background-color: hsl(145, 58%, 55%);
+}
+.container-box .card.social-card .card-top {
+  background-color: hsl(264, 64%, 52%);
+}
+.container-box .card.self-care-card .card-top {
+  background-color: hsl(43, 84%, 65%);
 }
 
 /*# sourceMappingURL=styles.css.map */
