@@ -9,8 +9,7 @@
 ## Overview
 
 ### Screenshot
-![Time Track Dashboard Preview (Desktop)](images/webpage-screenshot1.png)  
-![Time Track Dashboard Preview (Mobile)](images/webpage-screenshot2.png)
+![Time Track Dashboard Preview](images/webpage_screenshot.png)  
 
 ### Links
 - Solution URL: [GitHub Repository](https://github.com/Lodin03/time-tracker-dashboard)
@@ -21,12 +20,9 @@
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Grid
+- SCSS
 - JavaScript
 - JSON Data
-- Mobile-first workflow
-- BEM-style class naming
-- Responsive design principles (example: clamp())
 
 ## Author
 
